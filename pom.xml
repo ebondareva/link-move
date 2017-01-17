@@ -4,7 +4,7 @@
 
 	<groupId>com.nhl.link.move</groupId>
 	<artifactId>link-move-parent</artifactId>
-	<version>2.2-SNAPSHOT</version>
+	<version>2.2.CAY-M5-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<modules>
@@ -47,7 +47,7 @@
 
 		<!-- Custom properties (mostly framework versions) -->
 		<slf4j-version>1.7.21</slf4j-version>
-		<cayenne-version>4.0.M4</cayenne-version>
+		<cayenne-version>4.0.M5-SNAPSHOT</cayenne-version>
 		<jackson-version>2.6.3</jackson-version>
 		<apache-commons-csv-version>1.3</apache-commons-csv-version>
 	</properties>
@@ -58,6 +58,19 @@
 		<url>https://github.com/nhl/link-move</url>
 		<tag>HEAD</tag>
 	</scm>
+
+	<repositories>
+		<repository>
+			<id>cayenne-snapshots</id>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<url>http://maven.objectstyle.org/nexus/content/repositories/cayenne-unofficial/</url>
+		</repository>
+	</repositories>
 
 	<distributionManagement>
 		<repository>
